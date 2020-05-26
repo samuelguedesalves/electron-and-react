@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.App{
+  height: 100vh;
+  box-sizing: content-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app_title{
+  color: #333;
+  font-family: 'Roboto';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.creator{
+  color: #999;
+  font-family: 'Roboto';
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.box{
+  min-width: 560px;
+  width: 50vw;
+  height: 50vh;
+  min-height: 333px;
+  background: #eee;
+  border-radius: 10px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.describe-app{
+  color: #999;
+  font-family: 'Roboto';
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-what-is{
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.container-what-is .container-buttons{
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-what-is .describe-tech{
+  background-color: #fff;
+  width: 60%;
+  min-width: 199px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 20px;
+
+  /* x,y, blur, , color */
+  box-shadow: 0 5px 15px 1px rgba(000, 000, 000, 0.15);
+}
+
+.container-what-is .describe-tech h5 {
+  color: #333;
+  font-family: 'Roboto';
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  border-bottom: solid 2px #999;
+}
+
+.container-what-is .describe-tech p {
+  color: #333;
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+
+.emoji{
+  position: absolute;
+  z-index: -1;
+  transform: scale(20) rotateZ(-40deg);
+  bottom: 0;
 }
